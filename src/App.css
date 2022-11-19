@@ -1,16 +1,6 @@
+/* Main CSS Style */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -28,11 +18,51 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Movie-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* Memberikan jarak antar flex */
+  gap: 20px;
+}
+
+.Movie-wrapper {
+  width: 400px;
+  background-color: antiquewhite;
+  color:black ;
+}
+
+.Movie-search {
+  height: 48px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  font-weight: bold;
+  width: 475px;
+}
+
+.Movie-title {
+  height: 60px;
+  margin-top: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Movie-date {
+  margin-top: 26px;
+  font-style: italic;
+}
+
+.Movie-rate {
+  color: red;
+  margin-bottom: 24px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.Movie-image {
+  width: 400px;
+  height: 550px;
 }
